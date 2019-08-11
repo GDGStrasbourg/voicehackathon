@@ -9,16 +9,15 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-116458503-1');
 		</script>
-		<title>Google I/O Extended Strasbourg 2019</title>
+		<title>Voice Hackathon Strasbourg 2019</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta name="description" content="Google I/O Extended Strasbourg 2019 : Une soirée unique de concentré technologique" />
-		<meta property="og:image" content="https://io.gdgstrasbourg.fr/src/fbban.png" />
-		<meta property="og:image:type" content="image/png">
+		<meta name="description" content="Voice Hackathon Strasbourg : Voyager Mieux Avec Google Assistant" />
+		<!-- <meta property="og:image" content="https://io.gdgstrasbourg.fr/src/fbban.png" />
+		<meta property="og:image:type" content="image/png"> -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="anim.css"  media="screen,projection"/>
-		<link rel="icon" href="src/io_ico.png">
+		<link rel="icon" href="favicon.png">
 		<style type="text/css">
 			body {
 				font-family: 'Roboto', sans-serif;
@@ -54,13 +53,13 @@
 			}
 			@media only screen and (max-width: 992px) {
 				.major {
-					font-size: 5em;
+					font-size: 4.5em;
 				}
 				.major2 {
 					font-size: 4em;
 				}
 				.major3 {
-					font-size: 3.5em;
+					font-size: 3em;
 				}
 				.major4 {
 					font-size: 3em;
@@ -108,40 +107,51 @@
 			.v_align {
 				vertical-align: middle;
 			}
+			.actuallist li {
+				list-style-type: none; /* on annule la puce par défaut */
+				background-image: url(src/li.png); /* on affiche l'image souhaitée */
+				background-repeat: no-repeat; /* on annule la répétition par défaut */
+				background-position: left center; /* on positionne où l'on veut */
+				padding-left: 20px; /* pour éviter la superposition du contenu */
+			}
 		</style>
 	</head>
 	<body>
 	<header>
 		<div class="navbar-fixed">
 			<nav class="white z-depth-1">
-				<div class="nav-wrapper container">
-					<a href="#" class="brand-logo" style="margin-top: 6px;"><img class="logo" height="50px;" src="logo.webp"></a>
+				<div class="nav-wrapper ">
+					<a href="#" class="brand-logo black-text"><img style="margin-top: 6px; margin-left: 10px;" class="logo" height="50px;" src="src/logo_full.png"></a>
 					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i style="color: black;" class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#prog">Prix</a></li>
+						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#home">Présentation</a></li>
+						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#team">Équipes</a></li>
+						<li><a style="font-weight: bold;" class="active amber black-text js-scrollTo" href="#register">Inscription</a></li>
+						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#prog">Programme</a></li>
 						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#acces">Accès</a></li>
-						<li class="active amber"><a style="font-weight: bold;" class="black-text" href="https://www.billetweb.fr/google-io-extended-2019" target="_blank">Inscription</a></li>
-						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#partners">Jury</a></li>
+						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#partners">Partenaires</a></li>
 						<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 		<ul class="sidenav" id="mobile-demo">
-			<li><a href="#prog">Programme</a></li>
-			<li><a href="#acces">Accès</a></li>
-			<li><a href="https://www.billetweb.fr/google-io-extended-2019" target="_blank">Inscription</a></li>
-			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSesba0tsZM7jVt8C14JcoEfyiQ-TYVS0pxNKlmbyfCBl_KORg/viewform?usp=sf_link" target="_blank">Contribuer</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#home">Présentation</a></li>
+			<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#team">Équipes</a></li>
+			<li><a style="font-weight: bold;" class="active amber black-text js-scrollTo" href="#register">Inscription</a></li>
+			<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#prog">Programme</a></li>
+			<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#acces">Accès</a></li>
+			<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#partners">Partenaires</a></li>
+			<li><a style="font-weight: bold;" class="grey-text js-scrollTo" href="#contact">Contact</a></li>
 		</ul>
 	</header>
 	<div class="parallax-container">
-   		<div class="parallax amber"></div>
+   		<div class="parallax amber"><img src="bg.png"></div>
    		<div class="container">
 	    	<div class="row" style="position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;">
 				<div class="col s12 white-text">
 					<div class="major" class="">27-28 Septembre</div>
-					<div class="major3">Rejoignez le 1er Voice Hackathon Mondial</div>
+					<div class="major3">Rejoignez le 1er Voice Hackathon International</div>
 				</div>
 	    	</div>
 	    </div>
@@ -149,18 +159,35 @@
 	<div class="container">
 		<div class="mob_only">
 			<br>
-			<a href="https://www.billetweb.fr/google-io-extended-2019" style="width: 100%;" class="waves-effect teal accent-3 waves-light btn-large">Inscription</a>
+			<a href="#register" style="width: 100%;" class="waves-effect amber waves-light btn-large js-scrollTo black-text">Inscription</a>
 			<br><br>
+		</div>
+		<div class="row" id="home">
+			<div class="col s12">
+				<div class="card" style="border-radius: 10px;">
+					<div class="card-setheight">
+						<div class="card-image" style="border-radius: 10px 10px 0px 0px; background-image:url(src/prague.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 150px;">
+							<span class="card-title valign-wrapper"><i class="material-icons">play_arrow</i>&emsp;Gagnez Un Voyage A Prague</span>
+						</div>
+						<div class="card-content">
+							<p>Kiwi.com offre à l'équipe gagnante un voyage pour la grande finale qui se déroulera le 17 et 18 Octobre à Prague.</p>
+						</div>
+						<div class="card-action">
+							<a target="_blank" href="https://voicehackathon.org">Plus d'informations</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="row d-flex">
 			<div class="col s12 m6 d-flex">
 				<div class="card" style="border-radius: 10px;">
 					<div class="card-setheight">
 						<div class="card-image" style="border-radius: 10px 10px 0px 0px; background-image:url(src/vr.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 150px;">
-							<span class="card-title valign-wrapper"><i class="material-icons">play_arrow</i>&emsp;Démonstrations</span>
+							<span class="card-title valign-wrapper"><i class="material-icons">play_arrow</i>&emsp;Pour qui ?</span>
 						</div>
 						<div class="card-content">
-							<p>Venez <b>tester pendant une soirée</b> les dernières technologies Google ainsi que les innovations de nos partenaires : Réalité Virtuelle, Réalité Augmentée, Google Assistant, etc.</p>
+							<p>Vous aurez 24 heures pour créer votre application pour Google Assistant. Que vous soyez développeur, designer, commercial ou simplement passionné, venez créer ou rejoindre une équipe pour concevoir une app révolutionnaire.</p>
 						</div>
 						<div class="card-action">
 							<a class="js-scrollTo" href="#prog" href="#">Voir le programme</a>
@@ -172,10 +199,10 @@
 				<div class="card" style="border-radius: 10px;">
 					<div class="card-setheight">
 						<div class="card-image" style="border-radius: 10px 10px 0px 0px; background-image:url(src/live.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 150px;">
-							<span class="card-title valign-wrapper"><i class="material-icons">videocam</i>&emsp;Live</span>
+							<span class="card-title valign-wrapper"><i class="material-icons">play_arrow</i>&emsp;Pourquoi ?</span>
 						</div>
 						<div class="card-content">
-							<p>La keynote d'ouverture ainsi que la keynote dédiée aux développeurs seront diffusées en direct de San Francisco. De plus, <b>2 de nos membres seront sur place</b>, pour vous faire vivre l'événement en immersion.</p>
+							<p>Les assistants vocaux peuvent être un énorme avantage pour les voyageurs souffrants de certains handicapes. <br><br></p>
 						</div>
 						<div class="card-action">
 							<a class="js-scrollTo" href="#prog" href="#">Voir le programme</a>
@@ -184,10 +211,62 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="row d-flex grey lighten-5">
+		<div class="col s12 m6 d-flex">
+			<div class="container">
+				<br><br><br>
+				<h3 id="team" style="color: grey;">Équipes</h3>
+				<p>
+					L'équipe idéale est composée de 3 à 5 personnes. Cependant, tout le monde peut venir et travailler seul ou rejoindre une équipe
+				</p>
+				<p>
+					L'événement est ouvert à toutes personne - développeurs (même débutant), UX Designers, passionnés, femmes et hommes - qui veut apprendre et essayer quelque chose de nouveau.
+				</p>
+				<p>
+					<ul class="actuallist">
+						Chaque projet doit inclure :
+						<li class="actuallist"><b>Une bonne idée</b> : excitante, créative, innovante ou unique</li>
+						<li class="actuallist"><b>Un design conversationnel</b> : une conversation humaine intuitive</li>
+					</ul>
+				</p>
+				<p>
+					Nous attendons un prototype fonctionnel. Chaque équipe devra présenter son projet devant notre jury. Les critères de notation sont : innovation, ergonomie et créativité.
+				</p>
+				<br><br><br>
+			</div>
+		</div>
+		<div class="col s12 m6 d-flex hide-on-small-only" style="background-image:url(src/notes.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+	</div>
+	<div class="row d-flex grey lighten-5">
+		<div class="col m6 s12 d-flex hide-on-small-only" style="background-image:url(src/ga.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+		<div class="col m6 s12 d-flex">
+			<div class="container">
+				<br><br><br>
+				<h3 id="register" style="color: grey;">Inscription & Frais</h3>
+				<div class="card row valign-wrapper z-depth-0 grey lighten-5" style="border-radius: 10px 10px 10px 10px; border-width: 1px; border-style: solid; border-color: #e0e0e0;">
+					<div class="col m3 s12 center-align">
+						<h1>20€</h1>
+					</div>
+					<div class="col m9 s12">
+						<ul class="actuallist">
+							Inclus :
+							<li class="actuallist"><b>Boissons, cafés durant les 24 heures</b></li>
+							<li class="actuallist"><b>Repas vendredi soir</b></li>
+							<li class="actuallist"><b>Repas samedi midi</b></li>
+						</ul>
+					</div>
+				</div>
+				<a class="waves-effect white-text btn-flat btn-large waves-light amber" target="_blank" href="https://www.billetweb.fr/voice-hackathon-google-assistant" style="border-radius: 10px;">Inscription</a>
+				<br><br><br>
+			</div>
+		</div>
+	</div>
 
+	<div class="container">
 		<!-- Planning -->
 		<h3 class="valign-wrapper" id="prog" style="color: grey;"><i style="font-size: 0.8em; color: grey; margin-top: 2px;" class="material-icons">date_range</i>&emsp;Le programme</h3>
-		<div class="day">&emsp;Mardi 7 Mai</div>
+		<div class="day">&emsp;Vendredi 27 Septembre</div>
 		<table>
 			<tbody>
 				<tr>
@@ -205,7 +284,7 @@
 				</tr>
 				<tr>
 					<td class="time" rowspan="1">20:30&emsp;</td>
-					<td class="event_name">Echange avec nos membres sur place</td>
+					<td class="event_name">Échange avec nos membres sur place</td>
 				</tr>
 				<tr>
 					<td class="time" rowspan="1">21:45&emsp;</td>
@@ -218,32 +297,18 @@
 		<br><br>
 		<h3 id="acces" class="valign-wrapper" style="color: grey;"><i style="font-size: 0.8em; margin-top: 4px;" class="material-icons">location_on</i>&emsp;Nous trouver</h3>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.3774652340485!2d7.748083784831787!3d48.58347103823657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c85225d13e4b%3A0xe59f4fa201d2d60c!2sEpitech+Strasbourg!5e0!3m2!1sfr!2sfr!4v1521240460165" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+
 		<!-- Partners -->
-		<h3 class="valign-wrapper" id="partners" style="color: grey;"><i style="font-size: 0.8em; margin-top: 4px;" class="material-icons">star_border</i>&emsp;Nos partenaires</h3>
+		<h3 class="valign-wrapper" id="partners" style="color: grey;"><i style="font-size: 0.8em; margin-top: 4px;" class="material-icons">star_border</i>&emsp;Partenaires</h3>
 		<div class="row ">
-			<div class="col s12 xl2">
-				<a target="_blank" style="color:inherit;" href="https://about.google/">
-					<img style="width: 200px;" src="src/google.png">
+			<div class="col s12 xl6 center-align">
+				<a target="_blank" style="color:inherit;" href="https://kiwi.com/">
+					<img style="width: 200px;" src="src/partners/kiwi-logo.png">
 				</a>
 			</div>
-			<div class="col s12 xl2">
+			<div class="col s12 xl6 center-align">
 				<a target="_blank" style="color:inherit;" href="https://www.epitech.eu/fr/">
-					<img style="width: 200px;" src="src/epitech.png">
-				</a>
-			</div>
-			<div class="col s12 xl2">
-				<a target="_blank" style="color:inherit;" href="https://sfeir.com">
-					<img style="width: 200px;" src="src/sfeir.png">
-				</a>
-			</div>
-			<div class="col s12 xl2">
-				<a target="_blank" style="color:inherit;" href="https://www.epopia.com/">
-					<img style="width: 200px;" src="src/epopia.jpg">
-				</a>
-			</div>
-			<div class="col s12 xl2">
-				<a target="_blank" style="color:inherit;" href="https://aircampus.co/?referrer=jGtwOSjZI">
-					<img style="width: 200px;" src="src/aircampus.png">
+					<img style="width: 200px;" src="src/partners/epitech.png">
 				</a>
 			</div>
 		</div>
@@ -268,12 +333,13 @@
 				<div class="card white horizontal" style="border-radius: 10px;">
 				    <div class="card-stacked">
 						<div class="card-content black-text">
-							<span class="card-title">Devenez Partenaire</span>
+							<span class="card-title">Réseaux sociaux</span>
 							<p>
-								Exposez votre savoir faire auprès de nos visiteurs passionés.
-								<br><br>
-								<a class="waves-effect white-text btn-flat waves-light blue" target="_blank" href="https://drive.google.com/open?id=1Vkox4a1HSb8S5lx4EIAsywxuHeW-j34Z" style="border-radius: 10px;">En Savoir Plus</a>
-
+								<ul class="actuallist">
+									<li><b>Facebook</b> : <a href="https://www.facebook.com/GDGStrasbourg67" target="_blank">facebook.com/GDGStrasbourg67</a></li>
+									<li><b>Twitter</b> : <a href="https://twitter.com/gdgStrasbourg67" target="_blank">@GDGStrasbourg67</a></li>
+									<li><b>Linkedin</b> : <a href="https://www.linkedin.com/company/gdg-strasbourg/" target="_blank">linkedin.com/company/gdg-strasbourg/</a></li>
+								</li>
 							</p>
 						</div>
 					</div>
@@ -286,43 +352,27 @@
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-					<h5 class="white-text">#io19extended</h5>
-					<p class="grey-text text-lighten-4">Google I/O Extended Strasbourg 2019 est organisé par le GDG Strasbourg une association indépendante de droit local.</p>
+					<h5 class="white-text">#VoiceHackathon</h5>
+					<p class="grey-text text-lighten-4">Voice Hackathon est le premier hackathon international dédié à la voix. C'est un hackathon organisé par le GDG Strasbourg une association indépendante de droit local.</p>
 				</div>
 				<div class="col l4 offset-l2 s12">
 					<h5 class="white-text">Nos Partenaires</h5>
 					<ul>
 						<li><a class="grey-text text-lighten-3" href="https://epitech.eu">Epitech</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://sfeir.com/">SFEIR</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://www.epopia.com">Epopia</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://aircampus.co/?referrer=jGtwOSjZI">Aircampus</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://events.google.com/io/">Google I/O</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://kiwi.com/">Kiwi.com</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				Google I/O Extended Strasbourg 2019
-				<a class="grey-text text-lighten-4 right" href="#!">7 Mai 2019</a>
+				Voice Hackathon 2019 &#183; Website Made By <a class="amber-text" href="http://gamu.fr">gamu.fr</a>
+				<a class="grey-text text-lighten-4 right" href="#!">27-28 Septembre 2019</a>
 			</div>
 		</div>
 	</footer>
 
-	<div id="subscribe" class="modal modal-fixed-footer">
-		<div style="height: 100px; width: 100%; background-image:url(src/grid.jpg); padding-top: 50px; padding-left: 30px;">
-			<h4>Inscription</h4>
-		</div>
-		<div class="modal-content">
-			<p>Les inscriptions ne sont pas encore ouvertes.</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#!" class="modal-action modal-close waves-effect btn-flat ">Fermer</a>
-		</div>
-	</div>
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="src/jquery.paroller.min.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -330,56 +380,13 @@
 			$('.sidenav').sidenav();
 			$('.modal').modal();
 			$('.materialboxed').materialbox();
-			$('.my-paroller').paroller({
-				transition: 'transform 0.7s ease-out'
-			});
 			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
 				var page = $(this).attr('href'); // Page cible
 				var speed = 750; // Durée de l'animation (en ms)
 				$('html, body').animate( { scrollTop: $(page).offset().top -80 }, speed ); // Go
 				return false;
 			});
-			var url_string = window.location.href;
-			var url = new URL(url_string);
-			var c = url.searchParams.get("c");
-			console.log(c);
-			if (c == 'hack') {
-				$('#hack').modal('open');
-			}
 		});
-	</script>
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "Event",
-		  "name": "Google I/O Extended 2019 Strasbourg",
-		  "startDate": "2019-05-07T17:00",
-		  "endDate": "2019-05-07T23:00",
-		  "location": {
-		    "@type": "Place",
-		    "name": "Epitech Strasbourg",
-		    "address": {
-		      "@type": "PostalAddress",
-		      "streetAddress": "4 rue du Dôme",
-		      "addressLocality": "Strasbourg",
-		      "postalCode": "67000",
-		      "addressRegion": "Alsace",
-		      "addressCountry": "FR"
-		    }
-		  },
-		  "image": [
-		    "https://io.gdgstrasbourg.fr/m_logo.png"
-		   ],
-		  "description": "Une soirée unique de concentré technologique",
-		  "offers": {
-		    "@type": "Offer",
-		    "url": "https://www.billetweb.fr/google-io-extended-2019",
-		    "price": "0",
-		    "priceCurrency": "EUR",
-		    "availability": "True",
-		    "validFrom": "2019-03-10T16:00"
-		  }
-		}
 	</script>
 	</body>
 </html>
