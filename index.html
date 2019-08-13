@@ -179,7 +179,7 @@
 							</ul></p>
 						</div>
 						<div class="card-action">
-							<a target="_blank" href="https://voicehackathon.org">Plus d'informations</a>
+							<a class="modal-trigger" href="#rules">Plus d'informations</a>
 						</div>
 					</div>
 				</div>
@@ -436,6 +436,28 @@
 		</div>
 	</footer>
 
+	<!-- Modal Structure -->
+	<div id="rules" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h4>Prix</h4>
+			<h5>Pour l'équipe remportant le 1<sup>er</sup> Prix</h5>
+			<p>Le GDG Strasbourg offre à chaque membre de l’équipe 1 billet d’une valeur de 40€ valable pour le Devfest Strasbourg se déroulant le 6 Novembre 2019. Pour récupérer ce gain, le GDG Strasbourg fournit un code promotionnel qui permet l’achat du billet pour 0 (zéro) euro. Le billet doit être acheté sur la plateforme de vente avant le 6/11/2019 et dans la limite des places disponibles.</p>
+			<p>
+				Kiwi.com offre à l’équipe gagnante du premier prix la possibilité d’envoyer une vidéo de présentation du projet réalisé durant le hackathon. D’une durée de deux minutes, cette vidéo doit faire la démonstration de l’application vocale.
+				<br>Un jury composé de membres de Kiwi.com et de Google sélectionne sur la base de ces vidéos dix (10) équipes qui remporterons une bon de réduction d’une valeur de 500€ à utiliser sur le site kiwi.com
+			</p>
+			<h5>Pour l'équipe remportant le 2<sup>em</sup> Prix</h5>
+			<p>Le GDG Strasbourg offre à chaque membre de l’équipe 1 (un) billet d’une valeur de 40€ valable pour le Devfest Strasbourg se déroulant le 6 Novembre 2019. Pour récupérer ce gain, le GDG Strasbourg fournit un code promotionnel qui permet l’achat du billet pour 0 (zéro) euro. Le billet doit être acheté sur la plateforme de vente avant le 6/11/2019 et dans la limite des places disponibles.</p>
+			<h5>Pour l'équipe remportant le 3<sup>em</sup> Prix</h5>
+			<p>Le GDG Strasbourg offre à chaque membre de l’équipe 1 code de réduction permettant de bénéficier d’une réduction de 50% sur le prix d’un billet au tarif Standard (40€). Pour récupérer ce gain, le GDG Strasbourg fournit un code promotionnel qui permet l’achat du billet pour 20 euros. Le billet doit être acheté sur la plateforme de vente avant le 6/11/2019 et dans la limite des places disponibles.</p>
+			<h5>Pour les autres participants</h5>
+			<p>Le GDG Strasbourg offre, à toute personne n’ayant remporté aucun prix et ayant présenté un projet durant le pitch final devant le jury, un code de réduction permettant de bénéficier d’une réduction de 25% sur le prix d’un billet au tarif Standard (40€). Pour récupérer ce gain, le GDG Strasbourg fournit un code promotionnel qui permet l’achat du billet pour 30 euros. Le billet doit être acheté sur la plateforme de vente avant le 6/11/2019 et dans la limite des places disponibles.</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect btn-flat">Fermer</a>
+		</div>
+	</div>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
@@ -443,7 +465,6 @@
 			$('.parallax').parallax();
 			$('.sidenav').sidenav();
 			$('.modal').modal();
-			$('.materialboxed').materialbox();
 			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
 				var page = $(this).attr('href'); // Page cible
 				var speed = 750; // Durée de l'animation (en ms)
